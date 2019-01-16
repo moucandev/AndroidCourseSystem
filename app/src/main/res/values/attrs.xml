@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--虚线view的属性-->
+    <declare-styleable name="DashedLineView">
+        <attr name="lineColor" format="color" />
+        <attr name="dashOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="dashWidth" format="dimension" />
+        <attr name="dashGap" format="dimension" />
+    </declare-styleable>
+    <!--简易滑动面板-->
+    <declare-styleable name="SimpleSlidingPanel">
+        <attr name="SSP_state" format="enum">
+            <enum name="fullscreen" value="3"/>
+            <enum name="partial" value="2"/>
+            <enum name="descended" value="1"/>
+        </attr>
+        <attr name="SSP_partialstate_ratio" format="float"/>
+        <attr name="SSP_gap_height" format="dimension"/>
+        <attr name="SSP_handle_height" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="collapsedHeight" format="dimension"/>
+        <attr name="expand_icon" format="reference"/>
+        <attr name="expand_icon_marginTop" format="dimension"/>
+    </declare-styleable>
+    <!--圆角图片-->
+    <declare-styleable name="RoundImageView">
+        <attr name="RIV_radius" format="dimension"/>
+    </declare-styleable>
+</resources>
