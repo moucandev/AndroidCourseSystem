@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem.imageloader.drawable;
+package com.example.moucan.androidcoursesystem.imageloader;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

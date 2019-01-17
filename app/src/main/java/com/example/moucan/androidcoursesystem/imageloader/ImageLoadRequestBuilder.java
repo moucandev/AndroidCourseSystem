@@ -4,9 +4,10 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
-import com.pwrd.dls.marble.common.imageloader.listener.ImageLoadListener;
-import com.pwrd.dls.marble.common.imageloader.listener.ImageLoadProgressListener;
-import com.pwrd.dls.marble.common.util.ResUtils;
+
+import com.example.moucan.androidcoursesystem.imageloader.listener.ImageLoadListener;
+import com.example.moucan.androidcoursesystem.imageloader.listener.ImageLoadProgressListener;
+import com.example.moucan.androidcoursesystem.utils.ResUtils;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;

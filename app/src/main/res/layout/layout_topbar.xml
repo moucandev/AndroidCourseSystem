@@ -39,7 +39,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:drawableRight="@drawable/arrow_down_gray"
         android:drawablePadding="2dp"
         android:letterSpacing="0.05"
         android:maxLines="1"

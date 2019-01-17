@@ -8,10 +8,9 @@ import android.graphics.drawable.LayerDrawable;
 import android.text.Layout;
 import android.text.TextUtils;
 
-import com.pwrd.dls.marble.R;
-import com.pwrd.dls.marble.common.imageloader.drawable.TextDrawable;
-import com.pwrd.dls.marble.common.imageloader.listener.ILetterPlaceholder;
-import com.pwrd.dls.marble.common.util.ResUtils;
+import com.example.moucan.androidcoursesystem.R;
+import com.example.moucan.androidcoursesystem.imageloader.listener.ILetterPlaceholder;
+import com.example.moucan.androidcoursesystem.utils.ResUtils;
 
 import java.io.Serializable;
 
