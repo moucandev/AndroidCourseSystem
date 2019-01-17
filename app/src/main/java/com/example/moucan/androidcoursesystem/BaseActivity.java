@@ -25,13 +25,6 @@ public abstract class BaseActivity extends SwipeBackActivity implements NetWorkB
     protected BaseActivity activity;
     private View rootView = null;
     private View shadowView = null;
-    private float downX = 0;
-    private float downY = 0;
-    private boolean shouldIntercept = false;
-    private boolean hadJudge = false;
-    private float lastX = -1;
-    private VelocityTracker velocityTracker = null;
-    private int maxFlingVelocity;
     private Unbinder bun;
     private SwipeBackLayout swipeBackLayout;
 
@@ -94,6 +87,17 @@ public abstract class BaseActivity extends SwipeBackActivity implements NetWorkB
         appDavikActivityUtil.removeActivity(this);
         bun.unbind();
         super.onDestroy();
+    }
+    /**
+     * 监听Back键按下事件,默认调用onFinish()
+     */
+    @Override
+    public void onBackPressed() {
+        onFinish();
+    }
+
+    public void onFinish() {
+        finish();
     }
 
 }
