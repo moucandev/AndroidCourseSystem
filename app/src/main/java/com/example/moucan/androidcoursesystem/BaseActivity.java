@@ -18,13 +18,14 @@ import butterknife.Unbinder;
 import me.imid.swipebacklayout.lib.SwipeBackLayout;
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
-public abstract class BaseActivity extends SwipeBackActivity implements NetWorkBroadcastReceiver.NetEvent{
+public abstract class BaseActivity extends SwipeBackActivity implements NetWorkBroadcastReceiver.NetEvent {
     public static NetWorkBroadcastReceiver.NetEvent netEvent;
     public AppDavikActivityUtil appDavikActivityUtil = AppDavikActivityUtil.getScreenManager();
     protected Application context;
     protected BaseActivity activity;
     private View rootView = null;
     private View shadowView = null;
+    private TopbarLayout mTopbar;
     private Unbinder bun;
     private SwipeBackLayout swipeBackLayout;
 
@@ -38,15 +39,19 @@ public abstract class BaseActivity extends SwipeBackActivity implements NetWorkB
         activity = this;
         netEvent = this;
         initStatusColor();
-        initToolbar();
-        swipeBackLayout=getSwipeBackLayout();
+        if (getTopbarID() != 0) {
+            mTopbar = (TopbarLayout) findViewById(getTopbarID());
+            mTopbar.setOnTopbarClickListener(mTopbarClickListener);
+        }
+        swipeBackLayout = getSwipeBackLayout();
         swipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_LEFT);
-        initView();
         initData();
+        initView();
+
     }
 
     private void initStatusColor() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             Window window = activity.getWindow();
             //设置透明状态栏,这样才能让 ContentView 向上  6.0小米手机设置 tootlbar 会被挤上去
             //window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -65,18 +70,24 @@ public abstract class BaseActivity extends SwipeBackActivity implements NetWorkB
     }
 
     protected abstract int getLayoutId();
+
     protected abstract void initView();
+
     protected abstract void initData();
+
+    protected abstract int getTopbarID();
+
     /**
      * 初始化toolbar
      */
-    protected void initToolbar(){}
+    protected void initToolbar() {
+    }
 
     @Override
     public void onNetChange(String netMobile) {
         if (netMobile.equals(NetWorkUtils.NETWORK_TYPE_DISCONNECT)) {
             LogUtils.e("NetWork_Disconnect");
-        } else{
+        } else {
             LogUtils.e("NetWork_Normal");
         }
     }
@@ -88,6 +99,7 @@ public abstract class BaseActivity extends SwipeBackActivity implements NetWorkB
         bun.unbind();
         super.onDestroy();
     }
+
     /**
      * 监听Back键按下事件,默认调用onFinish()
      */
@@ -99,5 +111,59 @@ public abstract class BaseActivity extends SwipeBackActivity implements NetWorkB
     public void onFinish() {
         finish();
     }
+
+    public TopbarLayout getTopbar() {
+        return mTopbar;
+    }
+
+    @Override
+    public void setTitle(CharSequence title) {
+        super.setTitle(title);
+        if (mTopbar != null) {
+            mTopbar.setMainTitle(title.toString());
+        }
+    }
+
+    //topbar的监听
+    protected OnTopbarClickListener mTopbarClickListener = new OnTopbarClickListener() {
+        @Override
+        public void onLeftPartClick() {
+            onTopbarLeftClick();
+        }
+
+        @Override
+        public void onRightPartClick() {
+            onTopbarRightClick();
+        }
+
+        @Override
+        public void onRight2PartClick() {
+            onTopbarRight2Click();
+        }
+
+        @Override
+        public void onFunctionPartClick() {
+            onTopbarFunctionClick();
+        }
+    };
+
+    protected void onTopbarRight2Click() {
+
+    }
+
+
+    protected void onTopbarLeftClick() {
+        //默认是finish
+        onFinish();
+    }
+
+    protected void onTopbarRightClick() {
+        //do nothing
+    }
+
+    protected void onTopbarFunctionClick() {
+        //do nothing
+    }
+
 
 }

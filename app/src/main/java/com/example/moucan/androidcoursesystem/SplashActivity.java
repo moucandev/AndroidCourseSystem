@@ -16,4 +16,9 @@ public class SplashActivity extends BaseActivity {
     protected void initData() {
 
     }
+
+    @Override
+    protected int getTopbarID() {
+        return 0;
+    }
 }

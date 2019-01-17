@@ -17,4 +17,9 @@ public class CollectionActivity extends BaseActivity {
     protected void initData() {
 
     }
+
+    @Override
+    protected int getTopbarID() {
+        return 0;
+    }
 }

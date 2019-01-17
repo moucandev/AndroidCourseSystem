@@ -1,4 +1,5 @@
 package com.example.moucan.androidcoursesystem;
+
 import android.content.Context;
 import android.os.Handler;
 
@@ -13,17 +14,18 @@ public class Application extends android.app.Application {
     private static Application myApplication;
 
 
-
     @Override
     public void onCreate() {
         super.onCreate();
-        myApplication=this;
+        myApplication = this;
         context = this;
         mainHandler = new Handler();
     }
+
     public static Context getContext() {
         return context;
     }
+
     public static synchronized Application getInstance() {
         return myApplication;
     }

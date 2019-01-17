@@ -19,14 +19,14 @@ public abstract class BaseResultActivity extends BaseActivity implements BaseVie
 
     @Override
     protected void initView() {
-        if(activity == null){
+        if (activity == null) {
             throw new IllegalStateException("Activity cannot be empty");
         }
         mNormalView = (ViewGroup) findViewById(R.id.content_view);
-        if(mNormalView  == null){
+        if (mNormalView == null) {
             throw new IllegalStateException("There must be no mNormalView in the activity");
         }
-        if(!(mNormalView.getParent() instanceof ViewGroup)){
+        if (!(mNormalView.getParent() instanceof ViewGroup)) {
             throw new IllegalStateException("The parent layout of mNormalView must belong to the viewgroup");
         }
         ViewGroup parent = (ViewGroup) mNormalView.getParent();
@@ -45,7 +45,7 @@ public abstract class BaseResultActivity extends BaseActivity implements BaseVie
 
     @Override
     public void showNormal() {
-        if(currentState == NORMAL_STATE){
+        if (currentState == NORMAL_STATE) {
             return;
         }
         hideCurrentView();
@@ -55,7 +55,7 @@ public abstract class BaseResultActivity extends BaseActivity implements BaseVie
 
     @Override
     public void showError(String err) {
-        if(currentState == ERROR_STATE){
+        if (currentState == ERROR_STATE) {
             return;
         }
         hideCurrentView();
@@ -65,7 +65,7 @@ public abstract class BaseResultActivity extends BaseActivity implements BaseVie
 
     @Override
     public void showLoading() {
-        if(currentState == LOADING_STATE){
+        if (currentState == LOADING_STATE) {
             return;
         }
         hideCurrentView();
@@ -75,7 +75,7 @@ public abstract class BaseResultActivity extends BaseActivity implements BaseVie
 
     @Override
     public void showEmpty() {
-        if(currentState == EMPTY_STATE){
+        if (currentState == EMPTY_STATE) {
             return;
         }
         hideCurrentView();

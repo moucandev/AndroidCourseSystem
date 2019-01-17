@@ -5,7 +5,7 @@ import android.app.Activity;
 import java.util.Stack;
 
 /**
- *  activity 堆栈工具
+ * activity 堆栈工具
  */
 
 public class AppDavikActivityUtil {
@@ -23,11 +23,12 @@ public class AppDavikActivityUtil {
 
     /**
      * 单列堆栈集合对象
+     *
      * @return AppDavikActivityMgr 单利堆栈集合对象
      */
     public static AppDavikActivityUtil getScreenManager() {
         if (instance == null) {
-            synchronized (AppDavikActivityUtil.class){
+            synchronized (AppDavikActivityUtil.class) {
                 if (instance == null) {
                     instance = new AppDavikActivityUtil();
                 }
@@ -38,6 +39,7 @@ public class AppDavikActivityUtil {
 
     /**
      * 堆栈中销毁并移除
+     *
      * @param activity 指定Act对象
      */
     public void removeActivity(Activity activity) {
@@ -47,7 +49,6 @@ public class AppDavikActivityUtil {
             activity = null;
         }
     }
-
 
 
     /**
@@ -74,11 +75,12 @@ public class AppDavikActivityUtil {
 
     /**
      * 获取当前Act对象
+     *
      * @return Activity 当前act
      */
     public Activity currentActivity() {
         Activity activity = null;
-        if (!activityStack.empty()){
+        if (!activityStack.empty()) {
             activity = activityStack.lastElement();
         }
         return activity;
@@ -87,6 +89,7 @@ public class AppDavikActivityUtil {
 
     /**
      * 获得当前Act的类名
+     *
      * @return String
      */
     public String getCurrentActivityName() {
@@ -100,6 +103,7 @@ public class AppDavikActivityUtil {
 
     /**
      * 将Act纳入推栈集合中
+     *
      * @param activity Act对象
      */
     public void addActivity(Activity activity) {
@@ -110,9 +114,9 @@ public class AppDavikActivityUtil {
     }
 
 
-
     /**
      * 退出栈中所有Activity
+     *
      * @param cls
      * @return void
      */
