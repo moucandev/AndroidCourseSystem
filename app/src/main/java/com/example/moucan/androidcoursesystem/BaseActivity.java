@@ -2,7 +2,6 @@ package com.example.moucan.androidcoursesystem;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
