@@ -36,4 +36,19 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.0.0'
     implementation 'com.google.code.gson:gson:2.8.5'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'//没有使用特殊Header，可以不加这行
+    implementation 'com.ldoublem.loadingview:loadingviewlib:1.0'
+    implementation 'com.youth.banner:banner:1.4.10'
+    //滑动返回
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'//retrofit
+    //下面两个是RxJava 和RxAndroid
+    implementation 'io.reactivex:rxjava:1.1.5'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'//转换器，请求结果转换成Model
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'//配合Rxjava 使用
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
 }

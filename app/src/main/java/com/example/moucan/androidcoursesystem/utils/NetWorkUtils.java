@@ -1,9 +1,13 @@
 package com.example.moucan.androidcoursesystem.utils;
 import android.content.Context;
 import android.net.ConnectivityManager;
+import android.net.Network;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+
+import androidx.annotation.RequiresApi;
 
 /**
  * 注意 要添加网络权限 android.permission.ACCESS_NETWORK_STATE
@@ -108,5 +112,28 @@ public class NetWorkUtils {
             default:
                 return false;
         }
+    }
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public static String getNetWorkState(Context context) {
+        if (context == null) {
+            throw new UnsupportedOperationException("please use NetUtils before init it");
+        }
+        // 得到连接管理器对象
+        ConnectivityManager connMgr = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        //获取所有网络连接的信息
+        Network[] networks = connMgr.getAllNetworks();
+        //通过循环将网络信息逐个取出来
+        for (Network network : networks) {
+            //获取ConnectivityManager对象对应的NetworkInfo对象
+            NetworkInfo networkInfo = connMgr.getNetworkInfo(network);
+            if (networkInfo.isConnected()) {
+                if (networkInfo.getType() == ConnectivityManager.TYPE_MOBILE) {
+                    return isFastMobileNetwork(context) ? NETWORK_TYPE_3G : NETWORK_TYPE_2G;
+                } else {
+                    return NETWORK_TYPE_WIFI;
+                }
+            }
+        }
+        return NETWORK_TYPE_DISCONNECT;
     }
 }

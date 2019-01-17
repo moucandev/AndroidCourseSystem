@@ -1,10 +1,11 @@
 package com.example.moucan.androidcoursesystem;
 
-public class HomeActivity extends BaseActivity {
+public class CollectionActivity extends BaseActivity {
+
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_home;
+        return R.layout.activity_collection;
     }
 
     @Override

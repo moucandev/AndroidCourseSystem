@@ -1,14 +1,19 @@
 package com.example.moucan.androidcoursesystem;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+    protected int getLayoutId() {
+        return 0;
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }
