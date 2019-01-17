@@ -3,7 +3,6 @@ package com.example.moucan.androidcoursesystem.imageloader;
 import android.text.TextUtils;
 
 /**
- * @author xxZhu
  * @class UrlRequestOption
  * @describe 根据请求条件，构造新的url，不对外暴露
  */

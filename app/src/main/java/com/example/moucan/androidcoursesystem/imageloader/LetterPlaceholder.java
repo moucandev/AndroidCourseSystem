@@ -18,7 +18,6 @@ import androidx.annotation.ColorInt;
 
 /**
  *  @class      LetterPlaceholder
- *  @author     xxZhu
  *  @describe   需要
  *
  */

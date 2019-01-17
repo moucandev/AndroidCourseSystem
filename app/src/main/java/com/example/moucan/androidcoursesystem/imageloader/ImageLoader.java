@@ -13,7 +13,6 @@ import com.example.moucan.androidcoursesystem.imageloader.listener.ImageLoadProg
 
 
 /**
- * @author xxZhu
  * @class PreImageLoader
  * @describe 图片加载器[策略模式]
  */

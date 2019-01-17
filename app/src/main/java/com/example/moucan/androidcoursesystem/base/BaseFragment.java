@@ -172,7 +172,8 @@ public abstract class BaseFragment extends Fragment implements BaseView, NetWork
 
     @Override
     public void reload() {
-
+        initData();
+        initView();
     }
 
     private void hideCurrentView() {

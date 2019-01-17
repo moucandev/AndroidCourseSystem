@@ -13,7 +13,6 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
 
 /**
- * @author xxZhu
  * @class ImageLoadRequestBuilder
  * @describe
  */
