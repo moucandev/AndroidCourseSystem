@@ -1,14 +1,12 @@
-package com.example.moucan.androidcoursesystem.moudle;
+package com.example.moucan.androidcoursesystem.moudle.splash;
 
-import com.example.moucan.androidcoursesystem.R;
 import com.example.moucan.androidcoursesystem.base.BaseActivity;
 
-public class CollectionActivity extends BaseActivity {
-
+public class SplashActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_collection;
+        return 0;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem.moudle;
+package com.example.moucan.androidcoursesystem.moudle.homepage;
 
 import com.example.moucan.androidcoursesystem.R;
 import com.example.moucan.androidcoursesystem.base.BaseActivity;
