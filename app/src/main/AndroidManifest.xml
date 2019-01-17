@@ -26,21 +26,21 @@
         tools:targetApi="p">
 
         <!-- <meta-data tools:replace="android:appComponentFactory" /> -->
-        <activity android:name=".HomeActivity">
+        <activity android:name=".moudle.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".moudle.SplashActivity" />
 
         <receiver
-            android:name=".NetWorkBroadcastReceiver"
+            android:name=".receiver.NetWorkBroadcastReceiver"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".CollectionActivity"></activity>
+        <activity android:name=".moudle.CollectionActivity"></activity>
     </application>
 
 </manifest>

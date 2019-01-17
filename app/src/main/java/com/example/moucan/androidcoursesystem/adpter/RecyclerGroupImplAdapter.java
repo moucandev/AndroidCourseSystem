@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.adpter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,9 +10,6 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by wangwenbo on 2017/3/20.
- */
 
 @SuppressWarnings("unchecked")
 class RecyclerGroupImplAdapter extends RecyclerAdapter<RecyclerView.ViewHolder> {

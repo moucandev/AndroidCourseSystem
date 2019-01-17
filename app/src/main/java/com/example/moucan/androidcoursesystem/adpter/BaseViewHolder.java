@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.adpter;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -9,14 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.example.moucan.androidcoursesystem.R;
 import com.example.moucan.androidcoursesystem.imageloader.ImageLoader;
-import com.example.moucan.androidcoursesystem.utils.ClickUtils;
-import com.example.moucan.androidcoursesystem.utils.DrawUtils;
 import com.example.moucan.androidcoursesystem.utils.ResUtils;
-import com.example.moucan.androidcoursesystem.utils.StringUtils;
 
-import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.IdRes;

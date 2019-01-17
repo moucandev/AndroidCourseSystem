@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.view;
 
 /**
  * 监听回调

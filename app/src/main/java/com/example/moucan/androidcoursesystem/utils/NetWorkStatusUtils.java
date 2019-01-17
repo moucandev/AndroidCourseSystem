@@ -1,6 +1,6 @@
 package com.example.moucan.androidcoursesystem.utils;
 
-import com.example.moucan.androidcoursesystem.Application;
+import com.example.moucan.androidcoursesystem.base.Application;
 
 /**
  * @packagename moucan.androidcoursesystem.utils

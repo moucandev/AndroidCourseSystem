@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem.view;
+package com.example.moucan.androidcoursesystem.adpter;
 
 import android.view.View;
 

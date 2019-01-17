@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.base;
 
 /**
  * view 基础接口

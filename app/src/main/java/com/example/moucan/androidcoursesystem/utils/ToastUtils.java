@@ -2,7 +2,7 @@ package com.example.moucan.androidcoursesystem.utils;
 
 import android.widget.Toast;
 
-import com.example.moucan.androidcoursesystem.Application;
+import com.example.moucan.androidcoursesystem.base.Application;
 
 public class ToastUtils{
     private static Toast toast;

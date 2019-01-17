@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.adpter;
 
 import androidx.recyclerview.widget.RecyclerView;
 

@@ -6,10 +6,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.text.TextUtils;
 import android.util.TypedValue;
 
-import com.example.moucan.androidcoursesystem.Application;
+import com.example.moucan.androidcoursesystem.base.Application;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

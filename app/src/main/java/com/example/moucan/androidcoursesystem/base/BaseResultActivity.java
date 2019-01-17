@@ -1,8 +1,9 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.base;
 
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.example.moucan.androidcoursesystem.R;
 
 public abstract class BaseResultActivity extends BaseActivity implements BaseView {
 

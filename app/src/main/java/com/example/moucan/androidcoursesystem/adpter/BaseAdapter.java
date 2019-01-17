@@ -1,10 +1,9 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.adpter;
 
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.moucan.androidcoursesystem.utils.CollectionUtils;
-import com.example.moucan.androidcoursesystem.view.IBaseAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

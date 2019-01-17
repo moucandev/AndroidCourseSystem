@@ -1,4 +1,7 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.moudle;
+
+import com.example.moucan.androidcoursesystem.R;
+import com.example.moucan.androidcoursesystem.base.BaseActivity;
 
 public class CollectionActivity extends BaseActivity {
 

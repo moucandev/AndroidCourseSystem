@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.base;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -7,8 +7,12 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.moucan.androidcoursesystem.receiver.NetWorkBroadcastReceiver;
+import com.example.moucan.androidcoursesystem.R;
 import com.example.moucan.androidcoursesystem.utils.LogUtils;
 import com.example.moucan.androidcoursesystem.utils.NetWorkUtils;
+import com.example.moucan.androidcoursesystem.view.OnTopbarClickListener;
+import com.example.moucan.androidcoursesystem.view.TopbarLayout;
 
 import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;

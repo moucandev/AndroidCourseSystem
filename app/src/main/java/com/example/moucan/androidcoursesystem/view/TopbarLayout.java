@@ -1,4 +1,4 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.moucan.androidcoursesystem.R;
 import com.example.moucan.androidcoursesystem.utils.DrawUtils;
 
 public class TopbarLayout extends FrameLayout implements View.OnClickListener {

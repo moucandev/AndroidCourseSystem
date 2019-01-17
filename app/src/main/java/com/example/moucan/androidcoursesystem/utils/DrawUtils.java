@@ -5,7 +5,7 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
-import com.example.moucan.androidcoursesystem.Application;
+import com.example.moucan.androidcoursesystem.base.Application;
 
 public class DrawUtils {
 

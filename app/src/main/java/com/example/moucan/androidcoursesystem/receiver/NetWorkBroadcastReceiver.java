@@ -1,10 +1,11 @@
-package com.example.moucan.androidcoursesystem;
+package com.example.moucan.androidcoursesystem.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
+import com.example.moucan.androidcoursesystem.base.BaseActivity;
 import com.example.moucan.androidcoursesystem.utils.NetWorkUtils;
 
 import androidx.annotation.RequiresApi;
