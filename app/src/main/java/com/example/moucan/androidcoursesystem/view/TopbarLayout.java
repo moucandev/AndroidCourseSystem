@@ -19,9 +19,9 @@ public class TopbarLayout extends FrameLayout implements View.OnClickListener {
 
     private final static int DEFAULT_MAIN_TITLE_SINGLE_ROW_SIZE_DP = 18;
     private final static int DEFAULT_MAIN_TITLE_DOUBLE_ROW_SIZE_DP = 17;
-
-    private final static int DEFAULT_TOP_LAYOUT_SINGLE_ROW_MARGIN_TOP_PX = DrawUtils.dip2px(10);
-    private final static int DEFAULT_TOP_LAYOUT_DOUBLE_ROW_MARGIN_TOP_PX = DrawUtils.dip2px(6);
+//
+//    private final static int DEFAULT_TOP_LAYOUT_SINGLE_ROW_MARGIN_TOP_PX = DrawUtils.dip2px(10);
+//    private final static int DEFAULT_TOP_LAYOUT_DOUBLE_ROW_MARGIN_TOP_PX = DrawUtils.dip2px(6);
 
 
     private ImageView img_left;
